@@ -1,14 +1,9 @@
 module.exports = {
-	max:function(a,b) {
-		if(a>b){
+	max:function(numbers) {
+		var orderedNumbers = numbers.sort(function(a,b){
+			return a-b;
+		});
 
-			return a;
-
-		} else {
-
-			return b;
-
-		}
-					
+		return orderedNumbers[orderedNumbers.length-1];
 	}
 };

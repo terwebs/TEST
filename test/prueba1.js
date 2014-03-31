@@ -9,11 +9,11 @@ describe('MaxNumber', function(){
 	describe('#max', function(){
 
 		it('returns maxnumber between a and b', function(){
-			var a=4, b=1;
+			var numbers = [5,4,6,7,4,3,2,20,15,25];
 
-			var result = MaxNumber.max(a,b);
+			var result = MaxNumber.max(numbers);
 
-			expect(result).to.be.equal(4);
+			expect(result).to.be.equal(25);
 
 		})
 
