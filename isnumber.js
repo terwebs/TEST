@@ -1,15 +1,16 @@
-var nums = '0123456789',
-parsedNumber;
+var parsedNumber;
 
 module.exports = { 
 	isNumber:function(numbers) {   
 
+//function isNumber(numbers){
 		for (var i = 0; i < numbers.length; i++ ) {
 
-		 	var parsedNumber = parseInt(numbers[i]);
-            
+		 	if (isNaN(parseInt(numbers[i]))) {
+ 			 return parsedNumber=false;
+			}
 		}
-		return nums.indexOf(parsedNumber) != -1;
-    	
-  	}
-};
+	    return true;
+
+ 	}
+ };
