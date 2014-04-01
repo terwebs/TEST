@@ -1,5 +1,6 @@
 module.exports = {
 	max:function(numbers) {
+
 		var orderedNumbers = numbers.sort(function(a,b){
 			return a-b;
 		});

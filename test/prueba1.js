@@ -2,20 +2,46 @@
 
 
 var expect = require('chai').expect,
-MaxNumber = require('../maxnumber');
+MaxNumber = require('../maxnumber'),
+IsNumber = require('../isnumber');
+
+var numbers =  [1, 8, 5, 'nada', 5];
 
 describe('MaxNumber', function(){
 
 	describe('#max', function(){
 
+
+		
+		var result = MaxNumber.max(numbers);
+
+
 		it('returns maxnumber between a and b', function(){
-			var numbers = [5,4,6,7,4,3,2,20,15,25];
+			
+			expect(result).to.be.equal(12);
 
-			var result = MaxNumber.max(numbers);
-
-			expect(result).to.be.equal(25);
-
+			
 		})
+
+
+
+	});
+
+});
+
+describe('IsNumber', function(){
+
+	describe('#isNumber', function(){
+
+		var result = IsNumber.isNumber(numbers);
+
+		it('should be all numbers', function(){
+
+			expect(result).to.be.equal(true);
+		})
+
+
+
 
 	});
 

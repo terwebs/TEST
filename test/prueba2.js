@@ -10,8 +10,8 @@ describe('IsVowel', function(){
 
 		it('returns true if is vowel', function(){
 			
-			var vowels = 'aeiou';
-			var character = 'a';
+			
+			var character = 'o';
 			var result = IsVowel.isVowel(character);
 
 			expect(result).to.be.equal(true);
