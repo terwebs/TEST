@@ -1,0 +1,36 @@
+var expect = require('chai').expect,
+Sum = require('../sum'),
+Mul = require('../mul');
+
+describe('Sum', function(){
+
+	describe('#Sum', function(){
+
+		it('returns the sum of the array', function(){
+			
+			var numbers =  [1,2,3,4,5];
+			result = Sum.Sum(numbers),
+
+			expect(result).to.be.equal(15);
+			
+		})
+
+	});
+
+});
+
+describe('Mul', function(){
+
+	describe('#Mul', function(){
+
+		it('should be all numbers', function(){
+
+			var numbers =  [1,2,3,4],
+			result = Mul.Mul(numbers);
+
+			expect(result).to.be.equal(24);
+		})
+
+	});
+
+});
