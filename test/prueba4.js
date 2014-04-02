@@ -11,10 +11,10 @@ describe('Sum', function(){
 
 		it('returns the sum of the array', function(){
 			
-			var numbers =  [1,2,3,4,5];
+			var numbers =  [1,2,3,-4,5];
 			result = Sum.Sum(numbers),
 
-			expect(result).to.be.equal(15);
+			expect(result).to.be.equal(7);
 			
 		})
 
@@ -28,10 +28,10 @@ describe('Mul', function(){
 
 		it('returns the multiplication of all numbers in the array', function(){
 
-			var numbers =  [1,2,3,4],
+			var numbers =  [1,2,-3,4],
 			result = Mul.Mul(numbers);
 
-			expect(result).to.be.equal(24);
+			expect(result).to.be.equal(-24);
 		})
 
 	});
