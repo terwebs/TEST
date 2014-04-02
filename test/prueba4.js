@@ -26,7 +26,7 @@ describe('Mul', function(){
 
 	describe('#Mul', function(){
 
-		it('should be all numbers', function(){
+		it('returns the multiplication of all numbers in the array', function(){
 
 			var numbers =  [1,2,3,4],
 			result = Mul.Mul(numbers);
