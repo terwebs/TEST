@@ -22,6 +22,6 @@ module.exports = {
   }
 };
  
-  function isVowel(character) {   // funcion para saber si la letra es vocal o no
-    return vowels.indexOf(character) != -1;
-  }
+function isVowel(character) {   // funcion para saber si la letra es vocal o no
+  return vowels.indexOf(character) != -1;
+}
