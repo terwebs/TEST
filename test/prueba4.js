@@ -11,11 +11,11 @@ describe('Sum', function(){
 
 		it('returns the sum of the array', function(){
 			
-			var numbers =  [1,2,3,-4,5];
-			result = Sum.Sum(numbers),
+			var numbers =  [1,2,3,'lol',5];
+			result = Sum.Sum(numbers);
 
 			expect(result).to.be.equal(7);
-			
+			return new TypeError('Invalid input');
 		})
 
 	});
@@ -28,7 +28,7 @@ describe('Mul', function(){
 
 		it('returns the multiplication of all numbers in the array', function(){
 
-			var numbers =  [1,2,-3,4],
+			var numbers =  [1,2,-3,4];
 			result = Mul.Mul(numbers);
 
 			expect(result).to.be.equal(-24);
