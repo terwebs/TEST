@@ -1,10 +1,20 @@
+var parser = require('./isnumber');
 
-var mul=1;
-module.exports = { Mul: function(numbers){
+module.exports = { 
+  mul: function(numbers){
+    var 
+      i, 
+      mul = 1;
 
-        for (var i=0; i<numbers.length; i++){
-        mul *= numbers[i];
-        }
-        return mul;
-	}
+    if (!parser.isNumber(numbers)) {
+      return new TypeError('Invalid input: ' + numbers);
+    }
+
+    for (i = 0; i < numbers.length; i++){
+      mul *= numbers[i];
+    }
+
+    return mul;
+  }
+
 };
