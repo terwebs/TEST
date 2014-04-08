@@ -1,15 +1,13 @@
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one
 module.exports = {LongestWord:function(string) {
-    var str = string.split(" "); // convierte en arreglo, separa por " "
-    var longest = 0;
-    var word; 
-    for (var i = 0; i < str.length; i++) {
-        if (longest < str[i].length) { 
+    var str = string.split(" "); // convierte en arreglo, separa por " " ejemplo ('me diciembre') >> ["me", "diciembre"]
+    var longest = 0; // inicia longest en 0
+    for (var i = 0; i < str.length; i++) {  // compara los elementos del arreglo "me" y "diciembre"
+        if (longest < str[i].length) {  // si longest es menor que str[i] el elemento en al pos i
 
-            longest = str[i].length;
-            word = str[i];
-        }
+            longest = str[i].length; // guarda el tamano actual de ese elemento n el arreglo
+                    }
     }
-    return word.length;
+    return longest; // regresa longest con el ultimo valor
     }
 };
