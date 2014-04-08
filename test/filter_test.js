@@ -14,6 +14,20 @@ describe('Filter', function(){
       expect(result).to.be.equal('pelota ');
     });
 
+    it('returns invalid input exception if i is not a number', function(){
+      var words = 'que nota pelota',
+      i = 'lol';
+      result = Filter.filterLongWords(words,i);
+      expect(result)
+        .to
+        .be
+        .an
+        .instanceOf(TypeError)
+        .and
+        .have
+        .property('message', 'Invalid input: lol');
+    });
+
   });
 
 });
